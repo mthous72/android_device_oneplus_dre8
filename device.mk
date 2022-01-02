@@ -20,6 +20,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service
 
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.product.hardware.sku=nfc
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
