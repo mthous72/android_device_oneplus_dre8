@@ -14,8 +14,8 @@ fi
 set -e
 
 # Required!
-export DEVICE=renoir
-export DEVICE_COMMON=sm8350-common
-export VENDOR=xiaomi
+export DEVICE=dre8
+export DEVICE_COMMON=dre8
+export VENDOR=oneplus
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
