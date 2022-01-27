@@ -5,7 +5,7 @@
 #
 
 # Inherit from sm8350-common
-$(call inherit-product, device/xiaomi/sm8350-common/common.mk)
+$(call inherit-product, device/oneplus/dre8/common.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -17,4 +17,4 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Call the proprietary setup
-$(call inherit-product-if-exists, vendor/xiaomi/renoir/renoir-vendor.mk)
+$(call inherit-product-if-exists, vendor/oneplus/dre8/dre8-vendor.mk)
