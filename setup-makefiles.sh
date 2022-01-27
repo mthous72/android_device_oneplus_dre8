@@ -8,8 +8,8 @@
 set -e
 
 # Required!
-export DEVICE=renoir
-export DEVICE_COMMON=sm8350-common
-export VENDOR=xiaomi
+export DEVICE=dre8
+export DEVICE_COMMON=dre8
+export VENDOR=oneplush
 
 "./../../${VENDOR}/${DEVICE_COMMON}/setup-makefiles.sh" "$@"
