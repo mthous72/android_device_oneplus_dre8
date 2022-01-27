@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/renoir
+DEVICE_PATH := device/oneplus/dre8
 
-# Inherit from sm8350-common
-include device/xiaomi/sm8350-common/BoardConfigCommon.mk
+# Inherit from sm4350-common
+include device/oneplus/dre8/BoardConfigCommon.mk
 
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := renoir
@@ -16,8 +16,8 @@ TARGET_BOOTLOADER_BOARD_NAME := renoir
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/renoir-qgki_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7350
+TARGET_KERNEL_CONFIG := vendor/dre_defconfig
+TARGET_KERNEL_SOURCE := kernel/oneplus/dre8
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
@@ -28,4 +28,4 @@ BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 114001162240
 
 # Include proprietary files
--include vendor/xiaomi/renoir/BoardConfigVendor.mk
+-include vendor/oneplus/dre8/BoardConfigVendor.mk
